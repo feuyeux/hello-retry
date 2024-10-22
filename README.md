@@ -1,6 +1,6 @@
 # Hello Retry
 
-## Retry with ExponentialBackOff using resilience4j
+## Implement exponential backoff retry using resilience4j
 ```xml
 <dependency>
   <groupId>io.github.resilience4j</groupId>
@@ -44,7 +44,7 @@ public void testResilience4j() {
 }
 ```
 
-## Retry with ExponentialBackOff using guava-retrying
+## Implement exponential backoff retry using guava-retrying
 
 ```xml
 <dependency>
