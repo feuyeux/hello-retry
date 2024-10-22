@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="ERROR">
+  <Appenders>
+    <Console follow="true" name="Console" target="SYSTEM_OUT">
+      <PatternLayout pattern="%style{%d{HH:mm:ss.SSS}}{red} %highlight{%c{1.}}{blue} - %msg%n"/>
+    </Console>
+  </Appenders>
+  <Loggers>
+    <Logger name="org.apache" level="WARN" additivity="false">
+      <AppenderRef ref="Console"/>
+    </Logger>
+    <Root level="DEBUG">
+      <AppenderRef ref="Console"/>
+    </Root>
+  </Loggers>
+</Configuration>
